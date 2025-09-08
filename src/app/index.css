@@ -1,54 +1,68 @@
-.poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
+:root{
+  /********* 
+  * Colors
+  *********/
+  --primary-color-50:#fde6ed;
+  --primary-color-100:#f8b0c7;
+  --primary-color-200:#f48aab;
+  --primary-color-300:#f05485;
+  --primary-color-400:#ed336d;
+  --primary-color-500:#E80049;
+  --primary-color-600:#d30042;
+  --primary-color-700:#a50034;
+  --primary-color-800:#800028;
+  --primary-color-900:#61001f;
 
-.poppins-extralight {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
+  --secondary-color-50:#F2F2F2;
+  --secondary-color-100:#DADADA;
+  --secondary-color-200:#C2C2C2;
+  --secondary-color-300:#AAAAAA;
+  --secondary-color-400:#919191;
+  --secondary-color-500:#797979;
+  --secondary-color-600:#616161;
+  --secondary-color-700:#494949;
+  --secondary-color-800:#303030;
+  --secondary-color-900:#181818;
+  
+  /********* 
+  * linear-gradient
+  *********/
+  --linear-gradient: linear-gradient(90deg,rgba(0, 0, 0, 0.09) 45%, rgba(255, 255, 255, 1) 100%);
 
-.poppins-light {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
+  /**
+   * TYPOGRAPHY
+   */
 
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+  /* font-famliy */
+  --font-famliy-poppins: "Poppins", sans-serif;
+  --font-famliy-open-sans: "Open Sans", sans-serif;
 
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
+  /* font-size */
+  --font-size-title-h1: 3.5rem;
+  --font-size-title-h2: 2rem;
+  --font-size-title-h3: 1.5rem;
+  --font-size-title-h4: 1.25rem;
+  --font-size-title-h5: 1.125rem;
+  --font-size-body: 1rem;
+  --font-size-button: 1rem;
+  --font-size-price: 1.125rem;
+  --font-size-labels: 0.875rem;
 
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
+  /* font-weight */
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
 
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
+  /* line-height */
 
-.poppins-extrabold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
+  /* letter-spacing */
 
-.poppins-black {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
+  /* section-padding */
+  --section-padding-block:96;
+  --section-padding-padding-block:40;
 
+  /* box-shadow */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  
+}
