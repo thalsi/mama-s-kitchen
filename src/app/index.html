@@ -13,7 +13,51 @@
     <meta name="keywords" content="html, css, js, restaurant, food">
 
     <!-- favicon -->
-    <link rel="icon" type="image/png" href="/src/assets/logo.png">
+     <!-- ✅ 1. Standard Favicon (fallback for old browsers) -->
+      <!-- 
+     Browser Tabs & Bookmarks (old and new browsers) - Shows your brand icon in the tab bar and bookmark list.
+     Backward Compatibility       - Old browsers (especially Internet Explorer, early Firefox, old Android) only look for favicon.ico.
+     Multiple Sizes in One File   - .ico can include 16x16 + 32x32 (and more) inside a single file.
+     Desktop & Windows Shortcuts  - On Windows, if a user saves your website shortcut, the .ico is used as the desktop/taskbar icon.
+     Fallback for Modern Browsers - Even today, Chrome/Edge/Safari will still check /favicon.ico.If PNG/SVG icons fail to load, .ico is used as the fallback.   
+      -->
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- ✅ 2. PNG Favicons (modern browsers) -->     
+    <!-- 16x16 → small browser tabs, bookmarks
+    32x32 → high-res browser tabs
+    96x96 → Windows / older Android icons
+    192x192 → Android “Add to Home Screen” icon
+    512x512 → Progressive Web App (install icon) -->
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-96x96.png">
+
+    <!-- ✅ 3. SVG Favicon (infinite resolution, modern browsers only) -->
+     <!-- 
+    Perfect for 4K/Retina displays.
+    Only supported in modern browsers (Chrome, Firefox, Safari).
+    Not supported everywhere → keep PNGs/ICO as fallback.
+     -->
+     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- ✅ 4. Apple Touch Icon (iOS/iPadOS) -->
+     <!-- When an iPhone/iPad user saves your site to their home screen, this icon is shown. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- ✅ 6. Web App Manifest (PWA configuration) -->
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- ✅ 5. iOS Home Screen Title -->
+     <!-- Controls the name under your icon on iPhone/iPad home screens. -->
+    <meta name="apple-mobile-web-app-title" content="mama's kitchen" />
+
+    <!-- ✅ 7. Theme Color (browser toolbar, Android task switcher) -->
+    <meta name="theme-color" content="#ffffff" />
+
 
     <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -32,6 +76,7 @@
     
 </head>
 <body>
+    
     
 
     <script src="/src/app/index.js"></script>
