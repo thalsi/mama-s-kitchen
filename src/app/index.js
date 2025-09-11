@@ -1,6 +1,4 @@
 
-
-
 const loader = document.querySelector('[data-loader]');
 
 window.addEventListener("load", function(){
