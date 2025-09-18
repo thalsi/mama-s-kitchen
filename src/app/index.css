@@ -149,6 +149,7 @@ body{
 ::-webkit-scrollbar-thumb { background-color: var(--secondary-color-400);}
 
 
+
 /************ 
 Typography
 ************/
@@ -157,6 +158,7 @@ Typography
   font-family: var(--font-famliy-poppins);
   font-size: var(--font-size-title-h1);
   font-weight: var(--font-weight-600);
+  line-height: 1.1;
 }
 
 .title-h2{
@@ -222,6 +224,7 @@ Reuse
 .container{
   padding-block: 96px;
   padding-inline: 40px;
+  min-height: 100vh;
 }
 
 .btn{
@@ -233,6 +236,12 @@ Reuse
   cursor: pointer;
   text-align: center;
   text-decoration: none;
+  min-width: fit-content;
+}
+
+.btn i{
+  vertical-align: middle;
+  margin: 4px;
 }
 
 .btn-primary{
@@ -280,18 +289,17 @@ Reuse
   font-size: 16px;
 }
 
-.icon{
-  vertical-align: middle;
+.container{
+  padding-block: 96px;
+  padding-inline: 40px;
 }
 
-.icon-sm{
-  font-size: 12px;
+.text-white{
+  color: var(--secondary-color-50);
 }
-.icon-md{
-  font-size: 14px;
-}
-.icon-lg{
-  font-size: 16px;
+
+.text-red{
+  color: var(--primary-color-500);
 }
 
 /* 
@@ -338,6 +346,7 @@ Reuse
   left: 0;
   padding-block: 6px;
   padding-inline: 40px;
+  background-color: var(--secondary-color-50);
   box-shadow: var(--box-shadow-1);
   z-index: 10;
 }
@@ -429,4 +438,58 @@ Reuse
 
 .nav-item > .nav-link.active  .fa-caret-up{
   display: inline-block;
+}
+
+/* 
+- Hero section
+*/
+
+.hero{
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7)10%, transparent ),url('/src/assets/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-blend-mode: normal;
+  position: relative;
+}
+
+.hero .content{
+  width: 50%;
+}
+
+.hero .content-search-box{
+  margin-top: 24px;
+  background-color: var(--secondary-color-50);
+  border-radius: 50px;
+  display: flex;
+  column-gap: 8px;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  outline: 16px solid rgba(255, 255, 255, 0.3);
+  animation: outlinePulse 1.5s infinite;
+}
+
+@keyframes outlinePulse{
+  0% {
+    outline-width: 6px;
+    outline-color: rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    outline-width: 12px;
+    outline-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.content-search-box{
+  font-size: 24px;
+}
+
+.order-now{
+  position: absolute;
+  bottom: 16px;
+  left: 40px;
 }
