@@ -16,3 +16,13 @@ navLinks.forEach(link=>{
     });
 });
 
+const cardScroll=document.querySelector('[data-cards-scroll]');
+
+function scrollToLeft(){
+    cardScroll.scrollBy({left:-100, behavior:'smooth'});
+}
+
+function scrollToRight(){
+    cardScroll.scrollBy({left:100, behavior:'smooth'});
+}
+
