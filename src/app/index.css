@@ -142,7 +142,6 @@ body{
   font-size: var(--font-size-body);
   font-weight: var(--font-weight-400);
   height: 300vh;
-  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar { width: 8px;}
@@ -223,7 +222,7 @@ Reuse
 ************/
 
 .container{
-  padding-block: 96px;
+  padding-top: 96px;
   padding-inline: 40px;
   min-height: 100vh;
 }
@@ -289,11 +288,6 @@ Reuse
 .btn-lg {
   padding: 10px 20px;
   font-size: 16px;
-}
-
-.container{
-  padding-block: 96px;
-  padding-inline: 40px;
 }
 
 .text-white{
@@ -519,8 +513,6 @@ Reuse
   scroll-behavior: smooth;
   scrollbar-width: none ;
   padding-block: 8px;
-}::-webkit-scrollbar{
-  display: none;
 }
 
 .card{
@@ -541,4 +533,37 @@ Reuse
   padding: 16px;
   justify-content: center;
   gap: 6px;
+}
+
+/* 
+- our-dishes
+*/
+
+.our-dishes{
+  background-color: var(--primary-color-50);
+}
+
+.our-dishes .container{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.our-dishes .content-title{
+  text-align: center;
+}
+
+.content-sub{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-top: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.srot-nav{
+  overflow-x: hidden;
+  height: max-content;
 }
