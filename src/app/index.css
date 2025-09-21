@@ -46,6 +46,7 @@
   --font-size-body: 1rem;
   --font-size-button: 1rem;
   --font-size-price: 1.125rem;
+  --font-size-price-delete: 1.015rem;
   --font-size-labels: 0.875rem;
 
   /* font-weight */
@@ -205,7 +206,7 @@ Typography
 
 .price-text-line-through{
   font-family: var(--font-famliy-poppins);
-  font-size: var(--font-size-title-h4);
+  font-size: var(--font-size-price-delete);
   font-weight: var(--font-weight-600);
   text-decoration: line-through;
 }
@@ -566,4 +567,57 @@ Reuse
 .srot-nav{
   overflow-x: hidden;
   height: max-content;
+}
+
+.dish-card{
+  background-color: var(--secondary-color-50);
+  border-radius: 6px;
+  cursor: pointer;
+
+}
+
+.dish-card:hover{
+  box-shadow: var(--box-shadow-2);
+}
+
+.dish-card{
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  min-width: 150px;
+  max-width: 48%;
+  position: relative;
+}
+
+.dish-card .ratings{
+  padding-block: 8px;
+}
+
+.rated{
+  color: #d2cf09;
+}
+
+.dish-cards{
+  padding-block: 24px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.price{
+  background-color: var(--primary-color-500);
+  color: var(--secondary-color-50);
+  padding: 8px;
+  height: fit-content;
+  display: flex;
+  gap: 6px;
+  position: absolute;
+  top: 24;
+  right: 0;
+  justify-content: center;
+  align-items: center;
 }
