@@ -542,6 +542,7 @@ Reuse
 
 .our-dishes{
   background-color: var(--primary-color-50);
+  padding-bottom: 96px;
 }
 
 .our-dishes .container{
@@ -606,6 +607,7 @@ Reuse
   gap: 16px;
   justify-content: center;
   align-items: center;
+  margin-bottom: 24px;
 }
 
 .price{
@@ -620,4 +622,16 @@ Reuse
   right: 0;
   justify-content: center;
   align-items: center;
+}
+
+.our-dishes .content-body{
+  display: contents;
+}
+
+/* 
+- How To Order?
+*/
+
+.how-to-order .content-title{
+  text-align: center;
 }
