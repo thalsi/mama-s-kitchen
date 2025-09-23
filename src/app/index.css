@@ -635,3 +635,39 @@ Reuse
 .how-to-order .content-title{
   text-align: center;
 }
+
+
+.order-path-way-item{
+  text-align: center;
+  width: max-content;
+  padding: 16px;
+}
+
+.order-path-way-item i{
+  font-size: 52px;
+  color: var(--primary-color-300);
+  background-color: var(--primary-color-50);
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.order-path{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+}
+
+.dahsed-line{
+  border: none;
+  border-top: 5px dotted var(--secondary-color-400);
+  width: 73%;
+  position: absolute;
+  top: 42px;
+  left: 210px;
+  z-index: -1;
+}
+
+.how-to-order .content-body{
+  margin-top: 24px;
+}
