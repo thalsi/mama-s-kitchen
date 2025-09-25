@@ -143,6 +143,7 @@ body{
   font-size: var(--font-size-body);
   font-weight: var(--font-weight-400);
   height: 300vh;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar { width: 8px;}
@@ -698,4 +699,53 @@ Reuse
  position: absolute ;
   bottom: -568px ;
   left: 350px ;
+}
+
+/* 
+- about
+*/
+.why-people-choose-us .container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+
+.why-people-choose-us .container .content-left{
+  text-align: center;
+}
+
+.why-people-choose-us .content-left-inner{
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.why-people-choose-us .content-left-inner .item{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.why-people-choose-us .content-left-inner .item .dot-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: '1';
+  border: 1px solid var(--secondary-color-900);
+  background-color: var(--primary-color-400);
+  color: var(--secondary-color-50);
+  font-weight: 700;
+  font-size: var(--font-size-title-h2);
+  border-radius: 50%;
+  width: 70px ;
+  height: 70px ;
+  padding: 16px;
 }
