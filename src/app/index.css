@@ -671,3 +671,31 @@ Reuse
 .how-to-order .content-body{
   margin-top: 24px;
 }
+
+.how-to-order .container{
+  min-height: fit-content !important;
+  margin-bottom: 96px;
+}
+
+/* 
+- special offer
+*/
+
+.special-office{
+  background-image: url('/src/assets/Spetail\ off.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+}
+
+
+.special-office .content-body{
+  position: relative ;
+}
+
+.special-office .order-btn{
+ position: absolute ;
+  bottom: -568px ;
+  left: 350px ;
+}
