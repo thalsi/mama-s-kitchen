@@ -772,9 +772,46 @@ Reuse
   box-shadow: var(--box-shadow-2);
   padding: 6px;
   width: 25%;
+  position: relative;
+  transition :all 0.2s ease-in 0s;
 }
 
 .our-best-chef .content-body .chef-item img{
   border-radius: 6px;
   padding-bottom: 16px;
+}
+
+.social-links{
+  background-color: var(--primary-color-500);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  width: fit-content;
+  padding-inline: 16px;
+  position: absolute;
+  bottom: 40px;
+  left: 32%;
+  opacity: 0;
+  transition :all 0.2s ease-in 0s;
+}
+
+.social-links i{
+  color: var(--secondary-color-50);
+  font-size: 24px;
+  padding-block: 8px;
+  cursor: pointer;
+}
+
+.social-links i:hover{
+  color: var(--primary-color-900);
+}
+
+.our-best-chef .content-body .chef-item:hover .social-links{
+  opacity: 1;
+   bottom: 66px;
+   left: 32%;
+}
+.our-best-chef .content-body .chef-item:hover{
+  color: var(--secondary-color-50);
+  background-color: var(--primary-color-500);
+  box-shadow: var(--box-shadow-1);
 }
