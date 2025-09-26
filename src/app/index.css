@@ -276,6 +276,10 @@ Reuse
   box-shadow: var(--box-shadow);
 }
 
+.text-center{
+  text-align: center;
+}
+
 /* Sizes */
 .btn-sm {
   padding: 6px 12px;
@@ -748,4 +752,29 @@ Reuse
   width: 70px ;
   height: 70px ;
   padding: 16px;
+}
+
+/***************** 
+# our best chef
+******************/
+
+.our-best-chef .content-body{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding-top: 24px;
+}
+
+.our-best-chef .content-body .chef-item{
+  border-radius: 6px;
+  box-shadow: var(--box-shadow-2);
+  padding: 6px;
+  width: 25%;
+}
+
+.our-best-chef .content-body .chef-item img{
+  border-radius: 6px;
+  padding-bottom: 16px;
 }
