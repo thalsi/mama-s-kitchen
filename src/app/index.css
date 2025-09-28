@@ -815,3 +815,43 @@ Reuse
   background-color: var(--primary-color-500);
   box-shadow: var(--box-shadow-1);
 }
+
+/* 
+# download-app
+*/
+.download-app .container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-block: 96px;
+}
+
+.download-app .container .content{
+ display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--secondary-color-50);
+  background-color: var(--primary-color-500);
+  border-radius: 6px;
+  box-shadow: var(--box-shadow-2);
+  width: 70%;
+  padding-inline: 24px;
+  padding-block: 52px;
+  height: fit-content;
+}
+
+.download-app .container .mockup {
+ position: relative;
+}
+
+.download-app .container .content img{
+  position: absolute;
+     top: -225px;
+    left: -193px;
+}
+
+.download-app .container .content .btn{
+  margin-top: 16px;
+}
