@@ -1,558 +1,877 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Requrid meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- title -->
     <title>Mama's Kitchen</title>
 
     <!-- SEO meta tags -->
-    <meta name="description" content="Mama's kitchen is restaurant Website HTML template, built using HTML + CSS + JS, and based on a Figma-style design structure.">
-    <meta name="keywords" content="html, css, js, restaurant, food">
+    <meta
+      name="description"
+      content="Mama's kitchen is restaurant Website HTML template, built using HTML + CSS + JS, and based on a Figma-style design structure."
+    />
+    <meta name="keywords" content="html, css, js, restaurant, food" />
 
     <!-- favicon -->
-     <!-- ✅ 1. Standard Favicon (fallback for old browsers) -->
-      <!-- 
+    <!-- ✅ 1. Standard Favicon (fallback for old browsers) -->
+    <!-- 
      Browser Tabs & Bookmarks (old and new browsers) - Shows your brand icon in the tab bar and bookmark list.
      Backward Compatibility       - Old browsers (especially Internet Explorer, early Firefox, old Android) only look for favicon.ico.
      Multiple Sizes in One File   - .ico can include 16x16 + 32x32 (and more) inside a single file.
      Desktop & Windows Shortcuts  - On Windows, if a user saves your website shortcut, the .ico is used as the desktop/taskbar icon.
      Fallback for Modern Browsers - Even today, Chrome/Edge/Safari will still check /favicon.ico.If PNG/SVG icons fail to load, .ico is used as the fallback.   
       -->
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico" />
 
-    <!-- ✅ 2. PNG Favicons (modern browsers) -->     
+    <!-- ✅ 2. PNG Favicons (modern browsers) -->
     <!-- 16x16 → small browser tabs, bookmarks
     32x32 → high-res browser tabs
     96x96 → Windows / older Android icons
     192x192 → Android “Add to Home Screen” icon
     512x512 → Progressive Web App (install icon) -->
 
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/favicon-96x96.png"
+    />
 
     <!-- ✅ 3. SVG Favicon (infinite resolution, modern browsers only) -->
-     <!-- 
+    <!-- 
     Perfect for 4K/Retina displays.
     Only supported in modern browsers (Chrome, Firefox, Safari).
     Not supported everywhere → keep PNGs/ICO as fallback.
      -->
-     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <!-- ✅ 4. Apple Touch Icon (iOS/iPadOS) -->
-     <!-- When an iPhone/iPad user saves your site to their home screen, this icon is shown. -->
+    <!-- When an iPhone/iPad user saves your site to their home screen, this icon is shown. -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
     <!-- ✅ 6. Web App Manifest (PWA configuration) -->
     <link rel="manifest" href="/site.webmanifest" />
 
     <!-- ✅ 5. iOS Home Screen Title -->
-     <!-- Controls the name under your icon on iPhone/iPad home screens. -->
+    <!-- Controls the name under your icon on iPhone/iPad home screens. -->
     <meta name="apple-mobile-web-app-title" content="mama's kitchen" />
 
     <!-- ✅ 7. Theme Color (browser toolbar, Android task switcher) -->
     <meta name="theme-color" content="#ffffff" />
 
-
     <!-- icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- css -->
-    <link rel="stylesheet" href="/src/app/index.css">
+    <link rel="stylesheet" href="/src/app/index.css" />
 
     <!-- preload images -->
-    <link rel="preload" as="image" href="/src/assets/bg.jpg" type="image/jpg">
-    <link rel="preload" as="image" href="/src/assets/logo.png" type="image/png">
-    
-</head>
-<body>
+    <link rel="preload" as="image" href="/src/assets/bg.jpg" type="image/jpg" />
+    <link
+      rel="preload"
+      as="image"
+      href="/src/assets/logo.png"
+      type="image/png"
+    />
+  </head>
+  <body>
     <!-- 
     - loader
     -->
     <div class="loader-container" data-loader>
-        <div class="circle"></div>
+      <div class="circle"></div>
     </div>
 
-
     <header class="header">
-        <div class="header-container">
-            <a href="#" class="logo" >
-                <img src="/src/assets/logo.png" width="80" height="40" alt="Mama's kitchen">
-            </a>
+      <div class="header-container">
+        <a href="#" class="logo">
+          <img
+            src="/src/assets/logo.png"
+            width="80"
+            height="40"
+            alt="Mama's kitchen"
+          />
+        </a>
 
-            <nav class="navbar">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link active">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home 
-                            <i class="fa-solid fa-caret-down"></i>
-                            <i class="fa-solid fa-caret-up"></i>
-                        </a>
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#home" class="nav-link"
+                >Home
+                <i class="fa-solid fa-caret-down"></i>
+                <i class="fa-solid fa-caret-up"></i>
+              </a>
 
-                        <div class="nav-menu">
-                            <ul class="nav-item-list-menu">
-                               <li class="nav-item">
-                                    <a href="#home" class="nav-link">Home</a>
-                                </li>
-                               <li class="nav-item">
-                                    <a href="#home" class="nav-link">Home</a>
-                                </li>
-                               <li class="nav-item">
-                                    <a href="#home" class="nav-link">Home</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
+              <div class="nav-menu">
+                <ul class="nav-item-list-menu">
+                  <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                  </li>
                 </ul>
-            </nav>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+          </ul>
+        </nav>
 
-            <div>
-                <button class="btn btn-primary btn-md">
-                    Reservation <i class="fa-solid fa-arrow-right"></i></button>
-                <button class="btn btn-secondary btn-md"><i class="fa-solid fa-cart-shopping"></i></button>
-                <button class="btn btn-secondary btn-md"><i class="fa-regular fa-user"></i></button>
-            </div>
+        <div>
+          <button class="btn btn-primary btn-md">
+            Reservation <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <button class="btn btn-secondary btn-md">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          <button class="btn btn-secondary btn-md">
+            <i class="fa-regular fa-user"></i>
+          </button>
         </div>
-
+      </div>
     </header>
 
     <main>
-        <article>
+      <article>
+        <section class="hero" id="home">
+          <div class="container">
+            <div class="content">
+              <div class="content-header">
+                <h4 class="title-h3 text-white">
+                  Delicious Food, <span class="text-red">Delivered Fast.</span>
+                </h4>
+                <h1 class="title-h1 text-white">
+                  Order your favorite<br />
+                  meals online and enjoy<br />
+                  at home or office.
+                </h1>
+              </div>
+              <div class="content-search-box">
+                <i class="fa-solid fa-burger"></i>
+                <input
+                  type="text"
+                  id="search"
+                  name="search"
+                  class="formcontrol"
+                  value=""
+                  placeholder="Search food here..."
+                  maxlength="30"
+                  minlength="3"
+                />
+                <button class="btn btn-lg btn-primary">
+                  <i class="fa-solid fa-magnifying-glass"></i>Search
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="order-now">
+            <img src="/src/assets/call_on.png" alt="call on delivary" />
+          </div>
+        </section>
 
-
-            <section class="hero" id="home">
-                <div class="container">
-                    <div class="content">
-                        <div class="content-header">
-                            <h4 class="title-h3 text-white">Delicious Food, <span class="text-red">Delivered Fast.</span></h4>
-                            <h1 class="title-h1 text-white">Order your favorite<br> meals online and enjoy<br> at home or office.</h1>
-                        </div>
-                        <div class="content-search-box">
-                            <i class="fa-solid fa-burger"></i>
-                            <input 
-                            type="text"
-                            id="search"
-                            name="search" 
-                            class="formcontrol"
-                            value=""
-                            placeholder="Search food here..."
-                            maxlength="30"
-                            minlength="3"
-                            >
-                            <button class="btn btn-lg btn-primary"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
-                        </div>
-                    </div>
+        <section class="our-categories" id="our_categories">
+          <div class="container">
+            <div class="title">
+              <div class="header-left">
+                <h2 class="title-h2">Our Categories</h2>
+                <h4 class="title-h4 text-red">
+                  More Than 18 categories in 2000+ dishes
+                </h4>
+              </div>
+              <button class="btn btn-sm btn-secondary">
+                Show All <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <div class="content">
+              <div class="cards" data-cards-scroll>
+                <div class="card">
+                  <img
+                    src="/src/assets/Fried Rice.png"
+                    alt="Fried Rice"
+                    width="300"
+                    height="180"
+                  />
+                  <h3 class="title-h3">Fried Rice</h3>
                 </div>
-                 <div class="order-now">
-                    <img src="/src/assets/call_on.png" alt="call on delivary" >
+                <div class="card">
+                  <img
+                    src="/src/assets/Curry Dishes.png"
+                    alt="Curry Dishes"
+                    width="300"
+                    height="180"
+                  />
+                  <h3 class="title-h3">Curry Dishes</h3>
                 </div>
-            </section>
-
-            <section class="our-categories" id="our_categories">
-                <div class="container">
-                    <div class="title">
-                        <div class="header-left">
-                            <h2 class="title-h2">Our Categories</h2>
-                            <h4 class="title-h4 text-red">More Than 18 categories in 2000+ dishes</h4>
-                        </div>
-                        <button class="btn btn-sm btn-secondary">Show All <i class="fa-solid fa-arrow-right"></i></button>
-                    </div>
-                    <div class="content">
-                        <div class="cards" data-cards-scroll>
-                            <div class="card">
-                                <img src="/src/assets/Fried Rice.png" alt="Fried Rice" width="300" height="180">
-                                <h3 class="title-h3">Fried Rice</h3>
-                            </div>
-                            <div class="card">
-                                <img src="/src/assets/Curry Dishes.png" alt="Curry Dishes" width="300" height="180">
-                                <h3 class="title-h3">Curry Dishes</h3>
-                            </div>
-                            <div class="card">
-                                <img src="/src/assets/Nigiri & Sashimi.png" alt="Nigiri & Sashimi" width="300" height="180">
-                                <h3 class="title-h3">Nigiri & Sashimi</h3>
-                            </div>
-                            <div class="card">
-                                <img src="/src/assets/Noodles.png" alt="Noodles" width="300" height="180">
-                                <h3 class="title-h3">Noodles</h3>
-                            </div>
-                            <div class="card">
-                                <img src="/src/assets/Stir fry.png" alt="Stir fry" width="300" height="180">
-                                <h3 class="title-h3">Stir fry</h3>
-                            </div>
-                            <div class="card">
-                                <img src="/src/assets/Sushi & Sashimi.png" alt="Sushi & Sashimi" width="300" height="180">
-                                <h3 class="title-h3">Sushi & Sashimi</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bottam">
-                        <button class="btn btn-secondary btn-sm" onclick="scrollToLeft()"><i class="fa-solid fa-arrow-left"></i></button>
-                        <button class="btn btn-secondary btn-sm" onclick="scrollToRight()"><i class="fa-solid fa-arrow-right"></i></button>
-                    </div>
+                <div class="card">
+                  <img
+                    src="/src/assets/Nigiri & Sashimi.png"
+                    alt="Nigiri & Sashimi"
+                    width="300"
+                    height="180"
+                  />
+                  <h3 class="title-h3">Nigiri & Sashimi</h3>
                 </div>
-            </section>
-
-            <section class="our-dishes" id="our_dishes">
-                <div class="container">
-                    <div class="content-title">
-                        <h2 class="title-h2">Our Dishes</h2>
-                        <h4 class="title-h4 text-red">Start with the most appealing, high-quality ingredients.</h4>
-                    </div>
-                    <div class="content-sub">
-                        <!-- <button class="btn btn-sm btn-secondary"><i class="fa-solid fa-left-long"></i></button> -->
-                        <div class="srot-nav">
-                            <button class="btn btn-sm btn-primary">All</button>
-                            <button class="btn btn-sm btn-secondary">Noodles</button>
-                            <button class="btn btn-sm btn-secondary">Fried Rice</button>
-                            <button class="btn btn-sm btn-secondary">Stir-Fry</button>
-                            <button class="btn btn-sm btn-secondary">Sushi & Sashimi</button>
-                            <button class="btn btn-sm btn-secondary">Sushi Rolls (Maki)</button>
-                            <button class="btn btn-sm btn-secondary">Nigiri & Sashimi</button>
-                            <button class="btn btn-sm btn-secondary">Curry Dishes</button>
-                            <button class="btn btn-sm btn-secondary">Pho & Noodle Soups</button>
-                            <button class="btn btn-sm btn-secondary">Dim Sum </button>
-                            <button class="btn btn-sm btn-secondary">Curry Dishes</button>
-                        </div>
-                        <!-- <button class="btn btn-sm btn-secondary"><i class="fa-solid fa-right-long"></i></button> -->
-                    </div>
-                    <div class="content-body">
-                        <div class="dish-cards">
-                            <div class="dish-card">
-                                <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i><span class="price-text-line-through">300</span><span class="price-text">230</span></div>
-                                <img src="/src/assets/Curry Dishes.png" alt="Curry Dishes" width="200">
-                                <div class="dish-card-contenr">
-                                    <h3>Curry Dishes</h3>
-                                    <p>Dinner, Lunch </p>
-                                    <h5>Indian</h5>
-                                    <div class="ratings">
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-regular fa-star rated"></i>
-                                    </div>
-                                    <p>Lorem ipsum is a dummy or placeholder text commonly used 
-                                        in graphic design, publishing, and web development.</p>
-                                </div>
-                            </div>
-                            <div class="dish-card">
-                                <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i><span class="price-text-line-through">300</span><span class="price-text">230</span></div>
-                                <img src="/src/assets/Curry Dishes.png" alt="Curry Dishes" width="200">
-                                <div class="dish-card-contenr">
-                                    <h3>Curry Dishes</h3>
-                                    <p>Dinner, Lunch </p>
-                                    <h5>Indian</h5>
-                                    <div class="ratings">
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-regular fa-star rated"></i>
-                                    </div>
-                                    <p>Lorem ipsum is a dummy or placeholder text commonly used 
-                                        in graphic design, publishing, and web development.</p>
-                                </div>
-                            </div>
-                            <div class="dish-card">
-                                <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i><span class="price-text-line-through">300</span><span class="price-text">230</span></div>
-                                <img src="/src/assets/Curry Dishes.png" alt="Curry Dishes" width="200">
-                                <div class="dish-card-contenr">
-                                    <h3>Curry Dishes</h3>
-                                    <p>Dinner, Lunch </p>
-                                    <h5>Indian</h5>
-                                    <div class="ratings">
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-regular fa-star rated"></i>
-                                    </div>
-                                    <p>Lorem ipsum is a dummy or placeholder text commonly used 
-                                        in graphic design, publishing, and web development.</p>
-                                </div>
-                            </div>
-                            <div class="dish-card">
-                                <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i><span class="price-text-line-through">300</span><span class="price-text">230</span></div>
-                                <img src="/src/assets/Curry Dishes.png" alt="Curry Dishes" width="200">
-                                <div class="dish-card-contenr">
-                                    <h3>Curry Dishes</h3>
-                                    <p>Dinner, Lunch </p>
-                                    <h5>Indian</h5>
-                                    <div class="ratings">
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-regular fa-star rated"></i>
-                                    </div>
-                                    <p>Lorem ipsum is a dummy or placeholder text commonly used 
-                                        in graphic design, publishing, and web development.</p>
-                                </div>
-                            </div>
-                            <div class="dish-card">
-                                <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i><span class="price-text-line-through">300</span><span class="price-text">230</span></div>
-                                <img src="/src/assets/Curry Dishes.png" alt="Curry Dishes" width="200">
-                                <div class="dish-card-contenr">
-                                    <h3>Curry Dishes</h3>
-                                    <p>Dinner, Lunch </p>
-                                    <h5>Indian</h5>
-                                    <div class="ratings">
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-regular fa-star rated"></i>
-                                    </div>
-                                    <p>Lorem ipsum is a dummy or placeholder text commonly used 
-                                        in graphic design, publishing, and web development.</p>
-                                </div>
-                            </div>
-                            <div class="dish-card">
-                                <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i><span class="price-text-line-through">300</span><span class="price-text">230</span></div>
-                                <img src="/src/assets/Curry Dishes.png" alt="Curry Dishes" width="200">
-                                <div class="dish-card-contenr">
-                                    <h3>Curry Dishes</h3>
-                                    <p>Dinner, Lunch </p>
-                                    <h5>Indian</h5>
-                                    <div class="ratings">
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-regular fa-star rated"></i>
-                                    </div>
-                                    <p>Lorem ipsum is a dummy or placeholder text commonly used 
-                                        in graphic design, publishing, and web development.</p>
-                                </div>
-                            </div>
-                            <div class="dish-card">
-                                <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i><span class="price-text-line-through">300</span><span class="price-text">230</span></div>
-                                <img src="/src/assets/Curry Dishes.png" alt="Curry Dishes" width="200">
-                                <div class="dish-card-contenr">
-                                    <h3>Curry Dishes</h3>
-                                    <p>Dinner, Lunch </p>
-                                    <h5>Indian</h5>
-                                    <div class="ratings">
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-regular fa-star rated"></i>
-                                    </div>
-                                    <p>Lorem ipsum is a dummy or placeholder text commonly used 
-                                        in graphic design, publishing, and web development.</p>
-                                </div>
-                            </div>
-                            <div class="dish-card">
-                                <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i><span class="price-text-line-through">300</span><span class="price-text">230</span></div>
-                                <img src="/src/assets/Curry Dishes.png" alt="Curry Dishes" width="200">
-                                <div class="dish-card-contenr">
-                                    <h3>Curry Dishes</h3>
-                                    <p>Dinner, Lunch </p>
-                                    <h5>Indian</h5>
-                                    <div class="ratings">
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-regular fa-star rated"></i>
-                                    </div>
-                                    <p>Lorem ipsum is a dummy or placeholder text commonly used 
-                                        in graphic design, publishing, and web development.</p>
-                                </div>
-                            </div>
-                            <div class="dish-card">
-                                <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i><span class="price-text-line-through">300</span><span class="price-text">230</span></div>
-                                <img src="/src/assets/Curry Dishes.png" alt="Curry Dishes" width="200">
-                                <div class="dish-card-contenr">
-                                    <h3>Curry Dishes</h3>
-                                    <p>Dinner, Lunch </p>
-                                    <h5>Indian</h5>
-                                    <div class="ratings">
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-regular fa-star rated"></i>
-                                    </div>
-                                    <p>Lorem ipsum is a dummy or placeholder text commonly used 
-                                        in graphic design, publishing, and web development.</p>
-                                </div>
-                            </div>
-                            <div class="dish-card">
-                                <div class="price"><i class="fa-solid fa-indian-rupee-sign"></i><span class="price-text-line-through">300</span><span class="price-text">230</span></div>
-                                <img src="/src/assets/Curry Dishes.png" alt="Curry Dishes" width="200">
-                                <div class="dish-card-contenr">
-                                    <h3>Curry Dishes</h3>
-                                    <p>Dinner, Lunch </p>
-                                    <h5>Indian</h5>
-                                    <div class="ratings">
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-solid fa-star rated"></i>
-                                        <i class="fa-regular fa-star rated"></i>
-                                    </div>
-                                    <p>Lorem ipsum is a dummy or placeholder text commonly used 
-                                        in graphic design, publishing, and web development.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="btn btn-secondary btn-sm text-center">See all</button>
-                    </div>
-                    
+                <div class="card">
+                  <img
+                    src="/src/assets/Noodles.png"
+                    alt="Noodles"
+                    width="300"
+                    height="180"
+                  />
+                  <h3 class="title-h3">Noodles</h3>
                 </div>
-            </section>
+                <div class="card">
+                  <img
+                    src="/src/assets/Stir fry.png"
+                    alt="Stir fry"
+                    width="300"
+                    height="180"
+                  />
+                  <h3 class="title-h3">Stir fry</h3>
+                </div>
+                <div class="card">
+                  <img
+                    src="/src/assets/Sushi & Sashimi.png"
+                    alt="Sushi & Sashimi"
+                    width="300"
+                    height="180"
+                  />
+                  <h3 class="title-h3">Sushi & Sashimi</h3>
+                </div>
+              </div>
+            </div>
+            <div class="bottam">
+              <button class="btn btn-secondary btn-sm" onclick="scrollToLeft()">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <button
+                class="btn btn-secondary btn-sm"
+                onclick="scrollToRight()"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </section>
 
-
-            <section class="how-to-order" id="how-to-order">
-                <div class="container">
-                     <div class="content-title">
-                        <h2 class="title-h2">How To Order?</h2>
-                        <h4 class="title-h4 text-red">Start with the most appealing, high-quality ingredients.</h4>
+        <section class="our-dishes" id="our_dishes">
+          <div class="container">
+            <div class="content-title">
+              <h2 class="title-h2">Our Dishes</h2>
+              <h4 class="title-h4 text-red">
+                Start with the most appealing, high-quality ingredients.
+              </h4>
+            </div>
+            <div class="content-sub">
+              <!-- <button class="btn btn-sm btn-secondary"><i class="fa-solid fa-left-long"></i></button> -->
+              <div class="srot-nav">
+                <button class="btn btn-sm btn-primary">All</button>
+                <button class="btn btn-sm btn-secondary">Noodles</button>
+                <button class="btn btn-sm btn-secondary">Fried Rice</button>
+                <button class="btn btn-sm btn-secondary">Stir-Fry</button>
+                <button class="btn btn-sm btn-secondary">
+                  Sushi & Sashimi
+                </button>
+                <button class="btn btn-sm btn-secondary">
+                  Sushi Rolls (Maki)
+                </button>
+                <button class="btn btn-sm btn-secondary">
+                  Nigiri & Sashimi
+                </button>
+                <button class="btn btn-sm btn-secondary">Curry Dishes</button>
+                <button class="btn btn-sm btn-secondary">
+                  Pho & Noodle Soups
+                </button>
+                <button class="btn btn-sm btn-secondary">Dim Sum</button>
+                <button class="btn btn-sm btn-secondary">Curry Dishes</button>
+              </div>
+              <!-- <button class="btn btn-sm btn-secondary"><i class="fa-solid fa-right-long"></i></button> -->
+            </div>
+            <div class="content-body">
+              <div class="dish-cards">
+                <div class="dish-card">
+                  <div class="price">
+                    <i class="fa-solid fa-indian-rupee-sign"></i
+                    ><span class="price-text-line-through">300</span
+                    ><span class="price-text">230</span>
+                  </div>
+                  <img
+                    src="/src/assets/Curry Dishes.png"
+                    alt="Curry Dishes"
+                    width="200"
+                  />
+                  <div class="dish-card-contenr">
+                    <h3>Curry Dishes</h3>
+                    <p>Dinner, Lunch</p>
+                    <h5>Indian</h5>
+                    <div class="ratings">
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-regular fa-star rated"></i>
                     </div>
-                    <div class="content-body">
-                        <div class="order-path">
-                            <div class="order-path-way-item">
-                                <i class="fa-solid fa-location-dot"></i>
-                                <p>Choose Your Location</p>
-                            </div>
-                            <div class="order-path-way-item">
-                                <i class="fa-solid fa-bowl-food"></i>
-                                <p>Choose Your Product</p>
-                            </div>
-                            <div class="order-path-way-item">
-                                <i class="fa-solid fa-cube"></i>
-                                <p>Make Your Order</p>
-                            </div>
-                            <div class="order-path-way-item">
-                                <i class="fa-solid fa-truck-fast"></i>
-                                <p> On The Way</p>
-                            </div>
-                            <hr class="dahsed-line">
+                    <p>
+                      Lorem ipsum is a dummy or placeholder text commonly used
+                      in graphic design, publishing, and web development.
+                    </p>
+                  </div>
+                </div>
+                <div class="dish-card">
+                  <div class="price">
+                    <i class="fa-solid fa-indian-rupee-sign"></i
+                    ><span class="price-text-line-through">300</span
+                    ><span class="price-text">230</span>
+                  </div>
+                  <img
+                    src="/src/assets/Curry Dishes.png"
+                    alt="Curry Dishes"
+                    width="200"
+                  />
+                  <div class="dish-card-contenr">
+                    <h3>Curry Dishes</h3>
+                    <p>Dinner, Lunch</p>
+                    <h5>Indian</h5>
+                    <div class="ratings">
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-regular fa-star rated"></i>
+                    </div>
+                    <p>
+                      Lorem ipsum is a dummy or placeholder text commonly used
+                      in graphic design, publishing, and web development.
+                    </p>
+                  </div>
+                </div>
+                <div class="dish-card">
+                  <div class="price">
+                    <i class="fa-solid fa-indian-rupee-sign"></i
+                    ><span class="price-text-line-through">300</span
+                    ><span class="price-text">230</span>
+                  </div>
+                  <img
+                    src="/src/assets/Curry Dishes.png"
+                    alt="Curry Dishes"
+                    width="200"
+                  />
+                  <div class="dish-card-contenr">
+                    <h3>Curry Dishes</h3>
+                    <p>Dinner, Lunch</p>
+                    <h5>Indian</h5>
+                    <div class="ratings">
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-regular fa-star rated"></i>
+                    </div>
+                    <p>
+                      Lorem ipsum is a dummy or placeholder text commonly used
+                      in graphic design, publishing, and web development.
+                    </p>
+                  </div>
+                </div>
+                <div class="dish-card">
+                  <div class="price">
+                    <i class="fa-solid fa-indian-rupee-sign"></i
+                    ><span class="price-text-line-through">300</span
+                    ><span class="price-text">230</span>
+                  </div>
+                  <img
+                    src="/src/assets/Curry Dishes.png"
+                    alt="Curry Dishes"
+                    width="200"
+                  />
+                  <div class="dish-card-contenr">
+                    <h3>Curry Dishes</h3>
+                    <p>Dinner, Lunch</p>
+                    <h5>Indian</h5>
+                    <div class="ratings">
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-regular fa-star rated"></i>
+                    </div>
+                    <p>
+                      Lorem ipsum is a dummy or placeholder text commonly used
+                      in graphic design, publishing, and web development.
+                    </p>
+                  </div>
+                </div>
+                <div class="dish-card">
+                  <div class="price">
+                    <i class="fa-solid fa-indian-rupee-sign"></i
+                    ><span class="price-text-line-through">300</span
+                    ><span class="price-text">230</span>
+                  </div>
+                  <img
+                    src="/src/assets/Curry Dishes.png"
+                    alt="Curry Dishes"
+                    width="200"
+                  />
+                  <div class="dish-card-contenr">
+                    <h3>Curry Dishes</h3>
+                    <p>Dinner, Lunch</p>
+                    <h5>Indian</h5>
+                    <div class="ratings">
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-regular fa-star rated"></i>
+                    </div>
+                    <p>
+                      Lorem ipsum is a dummy or placeholder text commonly used
+                      in graphic design, publishing, and web development.
+                    </p>
+                  </div>
+                </div>
+                <div class="dish-card">
+                  <div class="price">
+                    <i class="fa-solid fa-indian-rupee-sign"></i
+                    ><span class="price-text-line-through">300</span
+                    ><span class="price-text">230</span>
+                  </div>
+                  <img
+                    src="/src/assets/Curry Dishes.png"
+                    alt="Curry Dishes"
+                    width="200"
+                  />
+                  <div class="dish-card-contenr">
+                    <h3>Curry Dishes</h3>
+                    <p>Dinner, Lunch</p>
+                    <h5>Indian</h5>
+                    <div class="ratings">
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-regular fa-star rated"></i>
+                    </div>
+                    <p>
+                      Lorem ipsum is a dummy or placeholder text commonly used
+                      in graphic design, publishing, and web development.
+                    </p>
+                  </div>
+                </div>
+                <div class="dish-card">
+                  <div class="price">
+                    <i class="fa-solid fa-indian-rupee-sign"></i
+                    ><span class="price-text-line-through">300</span
+                    ><span class="price-text">230</span>
+                  </div>
+                  <img
+                    src="/src/assets/Curry Dishes.png"
+                    alt="Curry Dishes"
+                    width="200"
+                  />
+                  <div class="dish-card-contenr">
+                    <h3>Curry Dishes</h3>
+                    <p>Dinner, Lunch</p>
+                    <h5>Indian</h5>
+                    <div class="ratings">
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-regular fa-star rated"></i>
+                    </div>
+                    <p>
+                      Lorem ipsum is a dummy or placeholder text commonly used
+                      in graphic design, publishing, and web development.
+                    </p>
+                  </div>
+                </div>
+                <div class="dish-card">
+                  <div class="price">
+                    <i class="fa-solid fa-indian-rupee-sign"></i
+                    ><span class="price-text-line-through">300</span
+                    ><span class="price-text">230</span>
+                  </div>
+                  <img
+                    src="/src/assets/Curry Dishes.png"
+                    alt="Curry Dishes"
+                    width="200"
+                  />
+                  <div class="dish-card-contenr">
+                    <h3>Curry Dishes</h3>
+                    <p>Dinner, Lunch</p>
+                    <h5>Indian</h5>
+                    <div class="ratings">
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-regular fa-star rated"></i>
+                    </div>
+                    <p>
+                      Lorem ipsum is a dummy or placeholder text commonly used
+                      in graphic design, publishing, and web development.
+                    </p>
+                  </div>
+                </div>
+                <div class="dish-card">
+                  <div class="price">
+                    <i class="fa-solid fa-indian-rupee-sign"></i
+                    ><span class="price-text-line-through">300</span
+                    ><span class="price-text">230</span>
+                  </div>
+                  <img
+                    src="/src/assets/Curry Dishes.png"
+                    alt="Curry Dishes"
+                    width="200"
+                  />
+                  <div class="dish-card-contenr">
+                    <h3>Curry Dishes</h3>
+                    <p>Dinner, Lunch</p>
+                    <h5>Indian</h5>
+                    <div class="ratings">
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-regular fa-star rated"></i>
+                    </div>
+                    <p>
+                      Lorem ipsum is a dummy or placeholder text commonly used
+                      in graphic design, publishing, and web development.
+                    </p>
+                  </div>
+                </div>
+                <div class="dish-card">
+                  <div class="price">
+                    <i class="fa-solid fa-indian-rupee-sign"></i
+                    ><span class="price-text-line-through">300</span
+                    ><span class="price-text">230</span>
+                  </div>
+                  <img
+                    src="/src/assets/Curry Dishes.png"
+                    alt="Curry Dishes"
+                    width="200"
+                  />
+                  <div class="dish-card-contenr">
+                    <h3>Curry Dishes</h3>
+                    <p>Dinner, Lunch</p>
+                    <h5>Indian</h5>
+                    <div class="ratings">
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-solid fa-star rated"></i>
+                      <i class="fa-regular fa-star rated"></i>
+                    </div>
+                    <p>
+                      Lorem ipsum is a dummy or placeholder text commonly used
+                      in graphic design, publishing, and web development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-secondary btn-sm text-center">
+                See all
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="how-to-order" id="how-to-order">
+          <div class="container">
+            <div class="content-title">
+              <h2 class="title-h2">How To Order?</h2>
+              <h4 class="title-h4 text-red">
+                Start with the most appealing, high-quality ingredients.
+              </h4>
+            </div>
+            <div class="content-body">
+              <div class="order-path">
+                <div class="order-path-way-item">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>Choose Your Location</p>
+                </div>
+                <div class="order-path-way-item">
+                  <i class="fa-solid fa-bowl-food"></i>
+                  <p>Choose Your Product</p>
+                </div>
+                <div class="order-path-way-item">
+                  <i class="fa-solid fa-cube"></i>
+                  <p>Make Your Order</p>
+                </div>
+                <div class="order-path-way-item">
+                  <i class="fa-solid fa-truck-fast"></i>
+                  <p>On The Way</p>
+                </div>
+                <hr class="dahsed-line" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="special-office" id="special-office">
+          <div class="container">
+            <div class="content-body">
+              <div class="order-btn">
+                <button class="btn btn-secondary btn-lg">Order Now</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="why-people-choose-us" id="why-people-choose-us">
+          <div class="container">
+            <div class="content-left">
+              <h2 class="title-h2">Why Pepole Choose Us?</h2>
+              <h4 class="title-h4">
+                clearly and compellingly present a company's unique benefits,
+                such as expertise, custom solutions, quality, a proven track
+                record, and a customer-focused approach
+              </h4>
+
+              <div class="content-left-inner">
+                <div class="item">
+                  <span class="dot-item">1</span>
+                  <p class="title-h4">Customer-focused approach</p>
+                </div>
+                <div class="item">
+                  <span class="dot-item">2</span>
+                  <p class="title-h4">Compellingly present a company's</p>
+                </div>
+                <div class="item">
+                  <span class="dot-item">3</span>
+                  <p class="title-h4">Custom solutions</p>
+                </div>
+              </div>
+            </div>
+            <div class="content-right">
+              <img src="/src/assets/chef-group.png" alt="chef-groups" />
+            </div>
+          </div>
+        </section>
+
+        <section class="our-best-chef" id="our-best-chef">
+          <div class="container">
+            <div class="content-title">
+              <h2 class="title-h2 text-center">How To Order?</h2>
+              <p class="title-body text-center">
+                Start with the most appealing, high-quality ingredients.
+              </p>
+            </div>
+            <div class="content-body">
+              <div class="chef-item">
+                <img
+                  src="/src/assets/chef-1.jpg"
+                  alt="Hendrik chef"
+                  width="100%"
+                  height="auto"
+                />
+                <div class="social-links">
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-square-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <h5 class="text-center">Hendrik</h5>
+                <p class="text-center">Master Chef</p>
+              </div>
+              <div class="chef-item">
+                <img
+                  src="/src/assets/chef-2.jpg"
+                  alt="Aleena Metha"
+                  width="100%"
+                  height="auto"
+                />
+                <div class="social-links">
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-square-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <h5 class="text-center">Aleena Metha</h5>
+                <p class="text-center">Junior Chef</p>
+              </div>
+              <div class="chef-item">
+                <img
+                  src="/src/assets/chef-3.jpg"
+                  alt="Hendrik chef"
+                  width="100%"
+                  height="auto"
+                />
+                <div class="social-links">
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-square-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <h5 class="text-center">Jon Joshef</h5>
+                <p class="text-center">Seenoir Chef</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="download-app" id="download-app">
+          <div class="container">
+            <div class="content">
+              <div class="mockup">
+                <img
+                  src="/src/assets/mocukup-app.png"
+                  alt="mockup"
+                  width="500px"
+                />
+              </div>
+              <div class="item-content">
+                <h2 class="title-h2">Download Free Our App</h2>
+                <p>Avalible on play store and Apple store</p>
+                <button class="btn btn-sm btn-secondary">
+                  <i class="fa-solid fa-download"></i>App Store
+                </button>
+                <button class="btn btn-sm btn-secondary">
+                  <i class="fa-solid fa-download"></i>Google Play Store
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="testimonials" id="testimonials">
+          <div class="container">
+            <div class="content-title">
+              <h2 class="title-h2 text-center">Testimonials</h2>
+              <p class="title-body text-center">
+                Start with the most appealing, high-quality ingredients.
+              </p>
+            </div>
+            <div class="content-body">
+              <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                         <p>
+                            “Acts of violence and terror have no place in Canada,
+                            especially those that target specific communities to create
+                            a climate of fear and intimidation,” an official statement
+                            said. The development comes more than a week after National
+                            Security Advisor Ajit Doval and his Canadian counterpart
+                            Nathalie Drouin held wide-ranging talks in New Delhi.
+                        </p>
+                         <div class="ratings">
+                            <i class="fa-solid fa-star rated"></i>
+                            <i class="fa-solid fa-star rated"></i>
+                            <i class="fa-solid fa-star rated"></i>
+                            <i class="fa-solid fa-star rated"></i>
+                            <i class="fa-regular fa-star rated"></i>
                         </div>
+                        <h3>Anitha Menon</h3>
                     </div>
-                </div>
-            </section>
-
-
-            <section class="special-office" id="special-office">
-                <div class="container">
-                    <div class="content-body">
-                     <div class="order-btn">
-                        <button class="btn btn-secondary btn-lg">Order Now</button>
-                    </div>
-                    </div>
-                  
-                </div>
-            </section>
-
-            <section class="why-people-choose-us" id="why-people-choose-us">
-                <div class="container">
-                    <div class="content-left">
-                        <h2 class="title-h2">Why Pepole Choose Us?</h2>
-                        <h4 class="title-h4 ">clearly and compellingly present a company's unique benefits, such as expertise, custom solutions, quality, a proven track record, and a customer-focused approach</h4>
+                    <div class=" img-relative">
+                        <img class="img-pic" src="/src/assets/chef-1.jpg" alt="pic">
                         
-                        <div class="content-left-inner">
-                            <div class="item">
-                                <span class="dot-item">1</span> 
-                                <p class="title-h4">Customer-focused approach</p>
-                            </div>
-                            <div class="item">
-                                <span class="dot-item">2</span> 
-                                <p class="title-h4">Compellingly present a company's</p>
-                            </div>
-                            <div class="item">
-                                <span class="dot-item">3</span> 
-                                <p class="title-h4">Custom solutions</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-right">
-                        <img src="/src/assets/chef-group.png" alt="chef-groups">
-                    </div>
-                </div>
-            </section>
-
-            <section class="our-best-chef" id="our-best-chef">
-                <div class="container">
-                    <div class="content-title">
-                        <h2 class="title-h2 text-center">How To Order?</h2>
-                        <p class="title-body text-center">Start with the most appealing, high-quality ingredients.</p>
-                    </div>
-                    <div class="content-body">
-                        <div class="chef-item">
-                            <img src="/src/assets/chef-1.jpg" alt="Hendrik chef" width="100%" height="auto">
-                            <div class="social-links">
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-square-facebook"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                            </div>
-                            <h5 class="text-center">Hendrik</h5>
-                            <p class="text-center">Master Chef</p>
-                        </div>
-                        <div class="chef-item">
-                            <img src="/src/assets/chef-2.jpg" alt="Aleena Metha" width="100%" height="auto">
-                            <div class="social-links">
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-square-facebook"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                            </div>
-                            <h5 class="text-center">Aleena Metha</h5>
-                            <p class="text-center">Junior Chef</p>
-                        </div>
-                        <div class="chef-item">
-                            <img src="/src/assets/chef-3.jpg" alt="Hendrik chef" width="100%" height="auto">
-                            <div class="social-links">
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-square-facebook"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                            </div>
-                            <h5 class="text-center">Jon Joshef</h5>
-                            <p class="text-center">Seenoir Chef</p>
+                        <div class="round-icon">
+                        <i class="fa-solid fa-message"></i>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <section class="download-app" id="download-app">
-                <div class="container">
-                    <div class="content">
-                        <div class="mockup">
-                            <img src="/src/assets/mocukup-app.png" alt="mockup" width="500px">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                         <p>
+                            “Acts of violence and terror have no place in Canada,
+                            especially those that target specific communities to create
+                            a climate of fear and intimidation,” an official statement
+                            said. The development comes more than a week after National
+                            Security Advisor Ajit Doval and his Canadian counterpart
+                            Nathalie Drouin held wide-ranging talks in New Delhi.
+                        </p>
+                         <div class="ratings">
+                            <i class="fa-solid fa-star rated"></i>
+                            <i class="fa-solid fa-star rated"></i>
+                            <i class="fa-solid fa-star rated"></i>
+                            <i class="fa-solid fa-star rated"></i>
+                            <i class="fa-regular fa-star rated"></i>
                         </div>
-                        <div class="item-content">
-                            <h2 class="title-h2">Download Free Our App</h2>
-                            <p >Avalible on play store and Apple store</p>
-                            <button class="btn btn-sm btn-secondary"><i class="fa-solid fa-download"></i>App Store</button>
-                            <button class="btn btn-sm btn-secondary"><i class="fa-solid fa-download"></i>Google Play Store</button>
+                        <h3>Anitha Menon</h3>
+                    </div>
+                    <div class=" img-relative">
+                        <img class="img-pic" src="/src/assets/chef-1.jpg" alt="pic">
+                        
+                        <div class="round-icon">
+                        <i class="fa-solid fa-message"></i>
                         </div>
                     </div>
                 </div>
-            </section>
-
-        </article>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                         <p>
+                            “Acts of violence and terror have no place in Canada,
+                            especially those that target specific communities to create
+                            a climate of fear and intimidation,” an official statement
+                            said. The development comes more than a week after National
+                            Security Advisor Ajit Doval and his Canadian counterpart
+                            Nathalie Drouin held wide-ranging talks in New Delhi.
+                        </p>
+                         <div class="ratings">
+                            <i class="fa-solid fa-star rated"></i>
+                            <i class="fa-solid fa-star rated"></i>
+                            <i class="fa-solid fa-star rated"></i>
+                            <i class="fa-solid fa-star rated"></i>
+                            <i class="fa-regular fa-star rated"></i>
+                        </div>
+                        <h3>Anitha Menon</h3>
+                    </div>
+                    <div class=" img-relative">
+                        <img class="img-pic" src="/src/assets/chef-1.jpg" alt="pic">
+                        
+                        <div class="round-icon">
+                        <i class="fa-solid fa-message"></i>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="nav-dots">
+                <div class="dot "></div>
+                <div class="dot dot-active"></div>
+                <div class="dot "></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
     </main>
 
-
     <script src="/src/app/index.js"></script>
-</body>
+  </body>
 </html>

@@ -855,3 +855,89 @@ Reuse
 .download-app .container .content .btn{
   margin-top: 16px;
 }
+
+/* 
+# testimonials
+*/
+
+.testimonials{
+  background-color: var(--primary-color-50);
+}
+
+
+.testimonial-card{
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  width: 60%;
+  align-items: center;
+  background-color: var(--secondary-color-50);
+  box-shadow: var(--box-shadow-1);
+  gap: 12px;
+}
+
+.testimonial-card .img-pic{
+  width: 300px;
+  height: 250px;
+}
+
+.testimonial-content{
+  text-align: center;
+  width: max-content;
+}
+
+.testimonial-cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 16px;
+  overflow-x: hidden;
+}
+
+.testimonial-content .ratings{
+  margin-top: 24px;
+}
+
+.testimonials .content-body{
+  padding-block: 16px;
+}
+
+.testimonials .img-relative{
+  position: relative;
+}
+
+.testimonials .round-icon{
+  position: absolute;
+  padding: 6px;
+  background-color: var(--primary-color-400);
+  left: -24px;
+  bottom: 16px;
+  border-radius: 50%;
+  border: 3px solid var(--secondary-color-50);
+}
+
+.testimonials .round-icon i{
+  font-size: 24px;
+}
+
+.nav-dots{
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-dots .dot{
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid var(--secondary-color-300);
+  background-color: var(--secondary-color-50);
+}
+
+.dot-active{
+  background-color: var(--primary-color-500) !important;
+}
