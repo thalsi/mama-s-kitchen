@@ -892,7 +892,13 @@ Reuse
   flex-wrap: nowrap;
   justify-content: center;
   gap: 16px;
-  overflow-x: hidden;
+  overflow-x: auto;
+  scrollbar-width: none;
+  cursor: grab;
+}
+
+.testimonial-cards::-webkit-scrollbar{
+  display: none;
 }
 
 .testimonial-content .ratings{

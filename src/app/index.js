@@ -26,3 +26,36 @@ function scrollToRight(){
     cardScroll.scrollBy({left:200, behavior:'smooth'});
 }
 
+
+
+const scrollGrab = document.getElementById('scroll-grab');
+
+
+let isDown = false;
+let startX;
+let scrollLeft;
+
+scrollGrab.addEventListener("mousedown", (e) => {
+  isDown = true;
+  startX = e.pageX - scrollGrab.offsetLeft;
+  scrollLeft = scrollGrab.scrollLeft;
+  scrollGrab.style.cursor = "grabbing";
+});
+
+scrollGrab.addEventListener("mouseleave", () => {
+  isDown = false;
+  scrollGrab.style.cursor = "grab";
+});
+
+scrollGrab.addEventListener("mouseup", () => {
+  isDown = false;
+  scrollGrab.style.cursor = "grab";
+});
+
+scrollGrab.addEventListener("mousemove", (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - scrollGrab.offsetLeft;
+  const walk = (x - startX) * 2; // speed
+  scrollGrab.scrollLeft = scrollLeft - walk;
+});
