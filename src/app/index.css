@@ -1005,4 +1005,50 @@ Reuse
 .blog .content-footer{
   padding: 16px;
   text-align: center;
+  margin-bottom: 40px;
+}
+
+/* 
+# footer
+*/
+
+.footer{
+  background-color: var(--primary-color-50);
+  /* color: var(--secondary-color-500); */
+}
+
+.footer .footer-body{
+  padding: 16px;
+}
+
+.footer hr{
+  background-color: var(--primary-color-100);
+}
+
+.copyright{
+  text-align: center;
+  padding: 6px;
+}
+
+.footer-content{
+  padding: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-logo{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer .nav-list{
+  flex-direction: column !important;
+}
+
+.footer-social{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
 }
